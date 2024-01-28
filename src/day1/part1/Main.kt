@@ -1,11 +1,11 @@
-package day1
+package day1.part1
 
 import java.io.File
 
 fun main() {
 
     var totalEfficient = 0
-    File("C:\\dev\\AdventOfCode\\resources\\day1\\input.txt").forEachLine {
+    File("resources/day1/input.txt").forEachLine {
         //println(it)
         val first : Char? =  it.find{ c: Char -> c.isDigit()}
         val last : Char? = it.findLast{ c: Char -> c.isDigit()}
